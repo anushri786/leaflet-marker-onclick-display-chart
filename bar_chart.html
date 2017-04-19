@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<style>
+.canvasjs-chart-credit{display:none};
+</style>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js'></script> 
+ 
+  <script type="text/javascript">
+  window.onload = function () {
+  CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+				"#b2c88a",
+                "#a6c079",
+                "#9bb867",
+                "#8fb056",
+                "#82a14b",
+                "#749043",
+				"#667e3b"
+                ]);
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+	  colorSet: "greenShades",
+      zoomEnabled: true,
+	  animationEnabled: true,
+      animationDuration: 2000,
+      
+      title:{
+	  
+       text: "Barmer GDP (in Rs. Cr.)"
+     },
+	  axisY:{
+	  title:"GDP (in Rs. Cr.)",
+	  titleFontColor:"black",
+	  valueFormatString:"#####.00",
+	  labelFontColor:"red",
+	  lineThickness:2,
+	  lineColor: "black",
+	  
+       
+     },
+	  axisX:{
+	        title:"Year",
+			titleFontColor:"black",
+            valueFormatString:"####",
+		    labelFontColor:"red",
+		    lineThickness:2,
+			lineColor: "black",
+			
+		   
+        },
+     data: [
+     {
+      type: "column",
+         xValueFormatString: "year ####",
+        yValueFormatString:"#####.00",
+	  
+
+      dataPoints: [
+
+              { x: 1999, y : 1838.21 },
+              { x: 2000, y : 2148.01 },
+              { x: 2001, y : 2537.06 },
+              { x: 2002, y : 2089.29 },
+              { x: 2003, y : 3276.78 },
+              { x: 2004, y : 2544.60 },
+              { x: 2005, y : 2676.42 }
+             
+      ]
+    }
+    ]
+  });
+
+    chart.render();
+  }
+  </script>
+
+</head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 30%;">
+  </div>
+</body>
+</html>

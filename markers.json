@@ -1,0 +1,21 @@
+
+markers = [
+   {
+     "name": "Jodhpur",
+     "url": "https://en.wikipedia.org/wiki/Jodhpur",
+     "lat": 26.28,
+     "lng": 73.02
+   },
+   {
+     "name": "Jaipur",
+     "url": "https://en.wikipedia.org/wiki/Jaipur",
+     "lat": 26.9,
+     "lng": 75.8
+   },
+   {
+     "name": "Barmer",
+     "url": "http://localhost:7770/18_april/bar_chart.html",
+     "lat": 25.7532,
+     "lng": 71.4181
+   }
+];
